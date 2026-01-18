@@ -1,39 +1,29 @@
 import Image from "next/image";
 import PixelBlast from "./component/PixelBlast";
+import Squares from "./component/Squares";
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-zinc-50 dark:bg-black overflow-hidden">
-      <div className="absolute inset-0 z-0 pointer-events-none" >
-        <PixelBlast
-        variant="circle"
-    pixelSize={6}
-    color="#B19EEF"
-    patternScale={3}
-    patternDensity={1.2}
-    pixelSizeJitter={0.5}
-    enableRipples
-    rippleSpeed={0.4}
-    rippleThickness={0.12}
-    rippleIntensityScale={1.5}
-    liquid
-    liquidStrength={0.12}
-    liquidRadius={1.2}
-    liquidWobbleSpeed={5}
-    speed={0.6}
-    edgeFade={0.25}
-    transparent
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <Squares
+          speed={0.5}
+          squareSize={40}
+          direction="diagonal"
+          borderColor="#fff"
+          hoverFillColor="#222"
         />
       </div>
       <main className="flex min-h-screen w-full max-w-2xl flex-col items-center justify-between py-90 px-26 bg-white dark:bg-black sm:items-start ">
         <div className="flex flex-col items-center gap-2 text-center sm:items-start sm:text-left">
           <h1 className="text-5xl font-semibold leading-15 tracking-tight text-black dark:text-zinc-50">
             Hi, Saya Gesang
-          </h1> 
+          </h1>
           <h2 className="typing-text text-2xl text-gray-700 dark:text-gray-300">
             Im a <span className="font-bold">FullStack Developer</span>
           </h2>
           <p className="max-w-md text-lg font-semibold leading-6">
-           Lorem ipsum dolor sit amet consectetur adipiscing elit ea quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi. {" "}
+            Lorem ipsum dolor sit amet consectetur adipiscing elit ea quisque
+            faucibus ex sapien vitae pellentesque sem placerat in id cursus mi.{" "}
           </p>
         </div>
         <div className="flex flex-col gap-3 text-base font-medium sm:flex-row ">
