@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 const Header = () => {
   return (
     <header className="bg-black/50 backdrop-blur-md text-white py-6 sticky top-0 z-50">
