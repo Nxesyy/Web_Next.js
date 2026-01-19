@@ -1,13 +1,20 @@
 import Image from "next/image";
-import Galaxy from "./component/Galaxy";
+import Squares from "./component/Squares";
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-zinc-50 dark:bg-black overflow-hidden">
-      <div className="absolute inset-0 z-0 pointer-events-none">
-      </div>
-      <div style={{ width: '100%', height: '600px', position: 'relative' }}>
-  <Galaxy />
-</div>
+      <div className="absolute inset-0 z-0 pointer-events-none"></div>
+      <Squares
+        speed={0.5}
+        squareSize={40}
+        direction="diagonal" // up, down, left, right, diagonal
+        borderColor="#fff"
+        hoverFillColor="#222"
+        direction="diagonal"
+        borderColor="#271E37"
+        hoverColor="#222222"
+        size={40}
+      />
       <main className="flex min-h-screen w-full max-w-2xl flex-col items-start justify-start pt-80 px-26 bg-white dark:bg-black">
         <div className="flex flex-col items-center gap-8 text-center sm:items-start sm:text-left">
           <div className="space-y-4">
@@ -19,12 +26,16 @@ export default function Home() {
             </h2>
           </div>
           <p className="max-w-md text-base leading-relaxed text-gray-600 dark:text-gray-400">
-            Saya adalah seorang Full Stack Developer yang memiliki ketertarikan dalam membangun aplikasi web secara menyeluruh, mulai dari sisi frontend hingga backend. Saya terbiasa mengembangkan antarmuka yang responsif dan user-friendly, serta merancang sistem backend yang efisien dan terstruktur.
+            Saya adalah seorang Full Stack Developer yang memiliki ketertarikan
+            dalam membangun aplikasi web secara menyeluruh, mulai dari sisi
+            frontend hingga backend. Saya terbiasa mengembangkan antarmuka yang
+            responsif dan user-friendly, serta merancang sistem backend yang
+            efisien dan terstruktur.
           </p>
         </div>
         <div className="mt-12 flex flex-col px-50 text-base font-medium sm:flex-row">
           <a
-            className="flex h-12 w-full items-center justify-center gap-3 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[142px]"
+            className="flex h-12 w-full items-center justify-center gap-3 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[150px]"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
