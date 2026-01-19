@@ -30,7 +30,7 @@ export default function RootLayout({
       >
         <Header />
         <div className="bg-home bg-no-repeat bg-cover">
-          <div className="bg-brown w-screen">{children}</div>
+          {children}
         </div>
       </body>
     </html>

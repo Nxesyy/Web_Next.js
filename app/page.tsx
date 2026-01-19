@@ -1,5 +1,4 @@
 import Image from "next/image";
-import PixelBlast from "./component/PixelBlast";
 import Squares from "./component/Squares";
 export default function Home() {
   return (

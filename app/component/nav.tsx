@@ -3,29 +3,31 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header className="bg-transparent text-white py-6 sticky top-0 z-50">
-      <nav className="container px-20">
-        <div className="flex justify-between items-center relative">
+      <nav className="container mx-auto px-2">
+        <div className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold hover:text-gray-300 transition-colors">
-            Gustavos Web
+            Gustavo
           </Link>
-
-          <ul className="absolute left-1/2 -translate-x-1/2 flex space-x-8 items-center">
+          
+          <ul className="flex space-x-14 items-center">
             <li>
               <Link href="/" className="text-white font-bold hover:text-gray-300 transition-colors">
-                Home
+                HOME
               </Link>
             </li>
             <li>
               <Link href="/portofolio" className="text-white font-bold hover:text-gray-300 transition-colors">
-                Portfolio
+                PORTOFOLIO
               </Link>
             </li>
             <li>
               <Link href="/blog" className="text-white font-bold hover:text-gray-300 transition-colors">
-                Hire Me
+                HIRE ME
               </Link>
             </li>
           </ul>
+          
+          <div className="w-20"></div>
         </div>
       </nav>
     </header>
